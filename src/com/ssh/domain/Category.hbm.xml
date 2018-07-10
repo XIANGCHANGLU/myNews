@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.ssh.domain.Category" table="category">
+	
+		<id name="cid" type="integer">
+			<generator class="increment"></generator>
+		</id>
+		<property name="categoryname" type="string"></property>
+		
+		<set name="news" cascade="save-update" >
+			<key>
+				<column name="c_news"></column>
+			</key>
+			<one-to-many class="com.ssh.domain.News"/>
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="user" namespace="/" extends="struts-default">
+	
+		<action name="user_Login" method="login" class="com.ssh.action.UserAction">
+			<result name="input">/index.jsp</result>
+			<result name="success">/content_user.jsp</result>
+		</action>
+		
+		<action name="user_logout" method="logout" class="com.ssh.action.UserAction">
+			<result name="input">/index.jsp</result>
+			<result name="success">/login_user.jsp</result>	
+		</action>
+		
+		<action name="findAllUser" method="findAllUser" class="com.ssh.action.UserAction">
+			<result name="input">/index.jsp</result>
+			<result name="success">/contetn_admin.jsp</result>	
+		</action>
+	</package>
+</struts>

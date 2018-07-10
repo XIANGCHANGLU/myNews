@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=src/config/struts-news.xml,WebRoot/js/pintuer.js,src/com/ssh/domain/Category.hbm.xml,src/config/applicationContext-db.xml,src/config/applicationContext.xml,src/config/struts-user.xml,src/com/ssh/domain/Admin.hbm.xml,WebRoot/js/jquery.js,src/config/applicationContext-category.xml,WebRoot/js/authorize.js,src/struts.xml,src/com/ssh/domain/User.hbm.xml,src/config/applicationContext-news.xml,src/config/struts-category.xml,src/config/applicationContext-user.xml,src/com/ssh/domain/News.hbm.xml
+validator.Unchecked=

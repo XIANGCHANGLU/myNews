@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="news" namespace="/" extends="struts-default">
+		<action name="findByUserid" method="findByUserid" class="com.ssh.action.NewsAction">
+			<result name="success">/content_user.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		<action name="addNews" method="addNews" class="com.ssh.action.NewsAction">
+			<result name="success">/content_user.jsp</result>			
+		</action>
+		<action name="allNews" method="findAllNews" class="com.ssh.action.NewsAction">
+			<result name="success">/AllNews_user.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		<action name="finByid" method="findByid" class="com.ssh.action.NewsAction">
+			<result name="success">/AllNews_user.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		<action name="deleteNews" method="deleteNews" class="com.ssh.action.NewsAction">
+			<result name="success">/AllNews_user.jsp</result>
+		</action>
+		<action name="findNewsByHead" method="findNewsByHead" class="com.ssh.action.NewsAction">
+			<result name="success">/FindNews_user.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		<action name="findNewsByCid" method="findNewsByCid" class="com.ssh.action.NewsAction">
+			<result name="success">/FindNews_category.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		<action name="updateNews" method="updateNews" class="com.ssh.action.NewsAction">
+			<result name="success">/content_user.jsp</result>
+		</action>
+		<action name="find" method="find" class="com.ssh.action.NewsAction">
+			<result name="success">/FindNews.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		<action name="findNewsBycategoryname" method="find_category" class="com.ssh.action.NewsAction">
+			<result name="success">/FindNews_categoryname.jsp</result>
+		</action>
+		<action name="findByid_index" method="findByid_index" class="com.ssh.action.NewsAction">
+			<result name="success">/index_event.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="category" namespace="/" extends="struts-default">
+		<action name="listCategory" method="findAllCategory" class="com.ssh.action.CategoryAction">
+			<result name="success">/AddNews_admin.jsp</result>
+		</action>
+		
+		<action name="getCategorybyid" method="getCategoryById" class="com.ssh.action.CategoryAction">
+			<result name="success">/AddNews_user.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+		<action name="addCategory" method="addCategory" class="com.ssh.action.CategoryAction">
+			<result name="success">/AddCategory_user.jsp</result>
+		</action>
+		
+		<action name="deleteCategory" method="deleteCategory" class="com.ssh.action.CategoryAction">
+			<result name="success">/content_user.jsp</result>
+		</action>
+		
+		<action name="updateCategory" method="updateCategory" class="com.ssh.action.CategoryAction">
+			<result name="success">/content_user.jsp</result>
+		</action>
+		
+		<action name="findCategoryid" method="findCategoryid" class="com.ssh.action.CategoryAction">
+			<result name="success">/content_user.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+	</package>
+	
+</struts>
